@@ -22,6 +22,11 @@ namespace ContactListSwagger
             items.Add(new Person(this.counterId, "Anakin", "Skywalker", "aniwalker@nojedimaster.com"));
         }
 
+        public List<Person> getItems()
+        {
+            return items;
+        }
+
         [HttpGet/*("/contacts")*/]
         public IActionResult GetAll()
         {
